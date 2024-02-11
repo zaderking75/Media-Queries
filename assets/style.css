@@ -1,0 +1,204 @@
+
+
+@media (max-width : 576px) {
+    button{ 
+        border-radius: 1px;
+        width: 150px;
+        height: 25px;
+        cursor: pointer;
+    }
+}
+
+button{ 
+    border-radius: 1px;
+    width: 150px;
+    height: 25px;
+    cursor: pointer;
+}
+
+@media (max-width :576px) { 
+    .button { 
+        display: none;
+    }
+}
+
+p { 
+    cursor: pointer;
+}
+
+nav {
+    
+    grid-area: menu;
+    background: #45adad;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+main {
+    grid-area: seccion-principal;
+    padding: 10px;
+    flex-direction: column;
+}
+
+  
+footer {
+    grid-area: pie-de-pagina;
+    background: #29383f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+  
+body{
+    margin: 0px ;
+}
+  
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 2fr 10fr 1fr;
+    grid-template-areas:
+    "menu"
+    "seccion-principal"
+    "pie-de-pagina";
+    
+}
+  
+@media (min-width: 576px) {
+    .grid-container{
+          grid-template-areas:
+          "menu seccion-principal"
+          "menu seccion-principal"
+          "pie-de-pagina seccion-principal";
+          grid-template-columns: 11rem 1fr ;
+        }
+
+        input{
+            width: 125px; ;
+        }
+
+        select{
+            width: 125px; ;
+        }
+    
+        .invisible  {
+            visibility: hidden;
+            border: 2px solid black;
+        }
+
+        i  {
+               cursor: pointer;
+        }
+
+        .is  {
+            visibility: hidden;
+        }
+
+        .cuadro {
+            visibility: hidden;
+        }
+}
+
+@media (max-width: 576px) {
+    .grid-container{
+          grid-template-areas:
+          "menu "
+          "seccion-principal"
+          "pie-de-pagina";
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1em;
+        align-items: center;
+    }
+    
+    .tarjeta2  {
+        visibility:visible ;/* seria invisible pero el display none no me funciona asi que lo dejo como esta */
+        
+    }
+
+    input{
+        width: 300px; ;
+    }
+
+    select{
+        width: 300px; ;
+    }
+
+    .cuadro {
+
+        border: 2px solid #000000;
+        text-align: center;
+        line-height: 50px; 
+      }
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+
+.tarjeta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    margin: 1em;
+    width: 270px;
+    height: 350px;
+    padding: 21px;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+img{
+    width: 120px;
+    cursor: pointer;
+}
+
+.h4{
+    text-decoration: line-through;
+}
+
+h3 {
+    text-align: center
+}
+
+h1 {
+    cursor: pointer;
+}
+
+.filtros {
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .filtros div {
+    margin-bottom: 30px;
+}
+
+.img2{
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
