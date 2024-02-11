@@ -99,9 +99,10 @@ body{
             visibility: hidden;
         }
 
-        .cuadro {
+        .ag{
             visibility: hidden;
-        }
+          }
+
 }
 
 @media (max-width: 576px) {
@@ -137,6 +138,10 @@ body{
         text-align: center;
         line-height: 50px; 
       }
+
+      .ah{
+        visibility: hidden;
+      }
 }
 
 .contenedor {
@@ -149,9 +154,9 @@ body{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    border: 2px solid black;
-    margin: 1em;
-    width: 270px;
+    border: 1px solid black;
+    margin: 10px;
+    width: 268px;
     height: 350px;
     padding: 21px;
     justify-content: space-evenly;
@@ -200,5 +205,20 @@ h1{
 
 p{
     text-align: center;
+}
+
+.cuadro1    {
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+
+.cuadro2 {
+    width: 25px;
+    border: 1px solid #070707;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
 }
 
